@@ -1,9 +1,8 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'STEM Knowledge'
 theme = 'risotto'
-contentdir: content
-layoutdir: layouts
-publishdir: public
-title: STEM Knowledge
-description: "The free knowledge initiative!"
+contentdir = 'content'
+layoutdir = 'layouts'
+publishdir = 'public'
+description= "The free knowledge initiative!"
