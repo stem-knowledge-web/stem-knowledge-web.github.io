@@ -1,8 +1,30 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://stem-knowledge-web.github.io/'
 languageCode = 'en-us'
 title = 'STEM Knowledge'
 theme = 'risotto'
-contentdir = 'content'
-layoutdir = 'layouts'
-publishdir = 'public'
 description= "The free knowledge initiative!"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+[params]
+  math = true
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/pages/about"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tracks"
+    name = "Learning-Tracks"
+    pageRef = "/tracks/"
+    weight = 10

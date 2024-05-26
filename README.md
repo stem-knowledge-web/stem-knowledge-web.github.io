@@ -1,6 +1,1 @@
-# stem-knowledge-web.github.io
-
-function {
-
-    :
-}
+A free and open-source knowledge repository / aggregation platform related to all things in science, technology, engineering, and mathematics
