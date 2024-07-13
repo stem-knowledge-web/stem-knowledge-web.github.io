@@ -4,9 +4,8 @@
 <table>
     <thead>
         <tr>
-            <th>#</th>
-            <th>Track Name</th>
-            <th>Number of Chapters</th>
+            <th>Chapter Number</th>
+            <th>Chapter Title</th>
         </tr>
     </thead>
     <tbody>
@@ -14,7 +13,6 @@
         <tr>
             <td>{{ $index }}</td>
             <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
-            <td>{{ len .Sections }}</td>
         </tr>
         {{ end }}
     </tbody>
