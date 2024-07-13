@@ -11,8 +11,8 @@ Your one step knowledge source for all things STEM (Science-Technology-Engineeri
 
 ### To start learning
 
-- browse [categories](/content/categories/_index.md)
-- explore [learning-tracks](/content/tracks/_index.md)
+- browse [categories](/categories/)
+- explore [learning-tracks](/tracks/)
 - read linked articles
 - solve listed problems
 
