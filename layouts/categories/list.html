@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>All Categories</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Serial Number</th>
+            <th>Category Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $index := 0 }} {{ range .Pages }} {{ $index = add $index 1 }}
+        <tr>
+            <td>{{ $index }}</td>
+            <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
+{{ end }}

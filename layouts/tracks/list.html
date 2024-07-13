@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1>All Learning Tracks</h1>
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Track Name</th>
+            <th>Number of Chapters</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $index := 0 }} {{ range .Pages }} {{ $index = add $index 1 }}
+        <tr>
+            <td>{{ $index }}</td>
+            <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+            <td>{{ len .Sections }}</td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
+{{ end }}

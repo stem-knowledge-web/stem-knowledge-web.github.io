@@ -1,7 +1,25 @@
-baseURL = 'https://stem-knowledge-web.github.io/'
-languageCode = 'en-us'
-title = 'STEM Knowledge'
-description= "The free knowledge initiative!"
+baseURL = "https://stem-knowledge-web.github.io/"
+languageCode = "en-us"
+title = "STEM Knowledge"
+paginate = 10
+
+[params]
+  description = "A Science Superbook!"
+  math = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Courses"
+    url = "/courses/"
+    weight = 2
+  [[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
 
 [markup]
   [markup.goldmark]
@@ -11,19 +29,3 @@ description= "The free knowledge initiative!"
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
           inline = [['\(', '\)']]
-[params]
-  math = true
-
-[menu]
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    pageRef = "/pages/about"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "tracks"
-    name = "Learning-Tracks"
-    pageRef = "/tracks/"
-    weight = 10

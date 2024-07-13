@@ -17,4 +17,4 @@ Your one step knowledge source for all things STEM (Science-Technology-Engineeri
 - solve listed problems
 
 ### Contributing
-- Please open a pull-request from our [GitHub repo](https://github.com/stem-knowledge-web/stem-knowledge-web.github.io){target="_blank"}
+- Please open a pull-request from our [GitHub repo](https://github.com/stem-knowledge-web/stem-knowledge-web.github.io)

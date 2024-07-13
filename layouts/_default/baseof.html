@@ -1,39 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{- site.Language.Lang -}}">
-
+<!doctype html>
+<html lang="en">
     <head>
-        {{- partial "head.html" . -}}
-        {{ if .Param "math" }}
-            {{ partialCached "math.html" . }}
-        {{ end }}
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ .Title }}</title>
+        <link rel="stylesheet" href="/css/styles.css" />
     </head>
-
     <body>
-        <div class="page">
-
-            <header class="page__header">
-                {{- partial "header.html" . -}}
-            </header>
-
-            <section class="page__body">
-                {{- block "main" . }}{{- end }}
-            </section>
-
-            <section class="page__aside">
-                <div class="aside__about">
-                    {{- partial "about.html" . -}}
-                </div>
-                <hr>
-                <div class="aside__content">
-                    {{- block "aside" . }}{{- end }}
-                </div>
-            </section>
-
-            <footer class="page__footer">
-                {{- partial "footer.html" . -}}
-            </footer>
-
-        </div>
+        {{ partial "header.html" . }}
+        <main>{{ block "main" . }}{{ end }}</main>
+        {{ partial "footer.html" . }}
     </body>
-
 </html>
