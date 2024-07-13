@@ -1,7 +1,6 @@
 baseURL = 'https://stem-knowledge-web.github.io/'
 languageCode = 'en-us'
 title = 'STEM Knowledge'
-theme = 'risotto'
 description= "The free knowledge initiative!"
 
 [markup]
