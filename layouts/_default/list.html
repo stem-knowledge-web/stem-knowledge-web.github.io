@@ -1,0 +1,40 @@
+{{ define "main" }}
+<section class="section-content">
+  <div class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
+    <p class="page-subtitle">{{ .Params.subtitle }}</p>
+    {{ end }}
+  </div>
+  
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+  
+  <!-- For Learning Tracks main page -->
+  {{ if eq .RelPermalink "/learning-tracks/" }}
+  <div class="track-list">
+    <h2>Available Learning Tracks</h2>
+    <ul>
+      {{ range sort .Pages "Title" }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+  
+  <!-- For individual learning track page -->
+  {{ if in .RelPermalink "/learning-tracks/" }}
+  {{ if ne .RelPermalink "/learning-tracks/" }}
+  <div class="chapter-list">
+    <h2>Chapters</h2>
+    <ol>
+      {{ range sort .Pages "Title" }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ol>
+  </div>
+  {{ end }}
+  {{ end }}
+</section>
+{{ end }}

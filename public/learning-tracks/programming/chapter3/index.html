@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Data Structures | Educational Hub</title>
+    <meta name="description" content="A minimalist educational website">
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.60f54fd7a0b5753e5b62b02afad8c3876720278033d8eddc900874ebf7d432fd.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    
+    
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+    <div class="header-container">
+      <div class="site-title">
+        <a href="http://localhost:1313/">Educational Hub</a>
+      </div>
+      <nav class="main-nav">
+    <ul>
+      
+      <li><a href="/" >Home</a></li>
+      
+      <li><a href="/about/" >About Us</a></li>
+      
+      <li><a href="/learning-tracks/" >Learning Tracks</a></li>
+      
+    </ul>
+  </nav>
+    </div>
+  </header>
+      <main>
+        <div class="content-container">
+          
+<article class="chapter-content">
+  <div class="page-header">
+    <h1 class="page-title">Chapter 3: Data Structures</h1>
+    
+    <p class="page-subtitle">Organizing and managing data in Python</p>
+    
+  </div>
+  
+  <div class="page-content">
+    <h2 id="python-data-structures">Python Data Structures</h2>
+<p>Data structures are containers that organize and group data according to their type. Python has several built-in data structures that make it easy to store and manipulate collections of data.</p>
+<h3 id="lists">Lists</h3>
+<p>Lists are ordered, mutable collections that can contain items of different types.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Creating a list</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Accessing elements (indexing starts at 0)</span>
+</span></span><span class="line"><span class="cl"><span class="n">first_fruit</span> <span class="o">=</span> <span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># &#34;apple&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">last_fruit</span> <span class="o">=</span> <span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># &#34;cherry&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Modifying elements</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;blueberry&#34;</span>  <span class="c1"># [&#34;apple&#34;, &#34;blueberry&#34;, &#34;cherry&#34;]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Adding elements</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;date&#34;</span><span class="p">)</span>  <span class="c1"># [&#34;apple&#34;, &#34;blueberry&#34;, &#34;cherry&#34;, &#34;date&#34;]</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;apricot&#34;</span><span class="p">)</span>  <span class="c1"># [&#34;apple&#34;, &#34;apricot&#34;, &#34;blueberry&#34;, &#34;cherry&#34;, &#34;date&#34;]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Removing elements</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&#34;cherry&#34;</span><span class="p">)</span>  <span class="c1"># [&#34;apple&#34;, &#34;apricot&#34;, &#34;blueberry&#34;, &#34;date&#34;]</span>
+</span></span><span class="line"><span class="cl"><span class="n">popped_fruit</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>  <span class="c1"># [&#34;apple&#34;, &#34;apricot&#34;, &#34;blueberry&#34;], popped_fruit = &#34;date&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># List operations</span>
+</span></span><span class="line"><span class="cl"><span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>  <span class="c1"># 3</span>
+</span></span><span class="line"><span class="cl"><span class="n">combined</span> <span class="o">=</span> <span class="n">fruits</span> <span class="o">+</span> <span class="p">[</span><span class="s2">&#34;elderberry&#34;</span><span class="p">,</span> <span class="s2">&#34;fig&#34;</span><span class="p">]</span>  <span class="c1"># [&#34;apple&#34;, &#34;apricot&#34;, &#34;blueberry&#34;, &#34;elderberry&#34;, &#34;fig&#34;]</span>
+</span></span><span class="line"><span class="cl"><span class="n">repeated</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>  <span class="c1"># [&#34;a&#34;, &#34;b&#34;, &#34;a&#34;, &#34;b&#34;, &#34;a&#34;, &#34;b&#34;]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Checking if an item exists</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="s2">&#34;apple&#34;</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Yes, apple is a fruit!&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="tuples">Tuples</h3>
+<p>Tuples are ordered, immutable collections that can contain items of different types.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Creating a tuple</span>
+</span></span><span class="line"><span class="cl"><span class="n">coordinates</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Accessing elements</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 10</span>
+</span></span><span class="line"><span class="cl"><span class="n">y</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># 20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tuples cannot be modified after creation</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># coordinates[0] = 15  # This would cause an error</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tuple unpacking</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">coordinates</span>  <span class="c1"># x = 10, y = 20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Tuple operations</span>
+</span></span><span class="line"><span class="cl"><span class="n">combined</span> <span class="o">=</span> <span class="n">coordinates</span> <span class="o">+</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span>  <span class="c1"># (10, 20, 30, 40)</span>
+</span></span><span class="line"><span class="cl"><span class="n">repeated</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>  <span class="c1"># (&#34;a&#34;, &#34;b&#34;, &#34;a&#34;, &#34;b&#34;)</span>
+</span></span></code></pre></div><h3 id="dictionaries">Dictionaries</h3>
+<p>Dictionaries are unordered, mutable collections of key-value pairs.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Creating a dictionary</span>
+</span></span><span class="line"><span class="cl"><span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Alice&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;age&#34;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;is_student&#34;</span><span class="p">:</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Accessing values</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="n">person</span><span class="p">[</span><span class="s2">&#34;name&#34;</span><span class="p">]</span>  <span class="c1"># &#34;Alice&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;age&#34;</span><span class="p">)</span>  <span class="c1"># 25</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Using get() prevents errors for non-existent keys</span>
+</span></span><span class="line"><span class="cl"><span class="n">occupation</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;occupation&#34;</span><span class="p">,</span> <span class="s2">&#34;Unknown&#34;</span><span class="p">)</span>  <span class="c1"># &#34;Unknown&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Modifying and adding key-value pairs</span>
+</span></span><span class="line"><span class="cl"><span class="n">person</span><span class="p">[</span><span class="s2">&#34;age&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">26</span>
+</span></span><span class="line"><span class="cl"><span class="n">person</span><span class="p">[</span><span class="s2">&#34;occupation&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Engineer&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Removing key-value pairs</span>
+</span></span><span class="line"><span class="cl"><span class="k">del</span> <span class="n">person</span><span class="p">[</span><span class="s2">&#34;is_student&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">occupation</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&#34;occupation&#34;</span><span class="p">)</span>  <span class="c1"># Removes key and returns value</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Dictionary operations</span>
+</span></span><span class="line"><span class="cl"><span class="n">keys</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>  <span class="c1"># dict_keys([&#39;name&#39;, &#39;age&#39;])</span>
+</span></span><span class="line"><span class="cl"><span class="n">values</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>  <span class="c1"># dict_values([&#39;Alice&#39;, 26])</span>
+</span></span><span class="line"><span class="cl"><span class="n">items</span> <span class="o">=</span> <span class="n">person</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>  <span class="c1"># dict_items([(&#39;name&#39;, &#39;Alice&#39;), (&#39;age&#39;, 26)])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Checking if a key exists</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="s2">&#34;name&#34;</span> <span class="ow">in</span> <span class="n">person</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Name is defined!&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="sets">Sets</h3>
+<p>Sets are unordered, mutable collections of unique items.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Creating a set</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Adding elements</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&#34;date&#34;</span><span class="p">)</span>  <span class="c1"># {&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;, &#34;date&#34;}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Adding a duplicate has no effect</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&#34;apple&#34;</span><span class="p">)</span>  <span class="c1"># {&#34;apple&#34;, &#34;banana&#34;, &#34;cherry&#34;, &#34;date&#34;}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Removing elements</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&#34;banana&#34;</span><span class="p">)</span>  <span class="c1"># {&#34;apple&#34;, &#34;cherry&#34;, &#34;date&#34;}</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># discard() doesn&#39;t raise an error if the item doesn&#39;t exist</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="s2">&#34;elderberry&#34;</span><span class="p">)</span>  <span class="c1"># No change</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set operations</span>
+</span></span><span class="line"><span class="cl"><span class="n">set1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">set2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">union</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">|</span> <span class="n">set2</span>  <span class="c1"># {1, 2, 3, 4, 5}</span>
+</span></span><span class="line"><span class="cl"><span class="n">intersection</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">&amp;</span> <span class="n">set2</span>  <span class="c1"># {3}</span>
+</span></span><span class="line"><span class="cl"><span class="n">difference</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">-</span> <span class="n">set2</span>  <span class="c1"># {1, 2}</span>
+</span></span><span class="line"><span class="cl"><span class="n">symmetric_difference</span> <span class="o">=</span> <span class="n">set1</span> <span class="o">^</span> <span class="n">set2</span>  <span class="c1"># {1, 2, 4, 5}</span>
+</span></span></code></pre></div><h2 id="solutions-to-chapter-2-practice-exercises">Solutions to Chapter 2 Practice Exercises</h2>
+<ol>
+<li>Check if a number is positive, negative, or zero:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Enter a number: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The number is positive.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The number is negative.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The number is zero.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="2">
+<li>Print even numbers between 1 and 20:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="3">
+<li>Password checker:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Enter the password: &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">password</span> <span class="o">==</span> <span class="s2">&#34;python123&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Access granted!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Incorrect password. Try again.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="practice-exercises">Practice Exercises</h2>
+<ol>
+<li>Create a list of your favorite foods, then add a new food, remove one, and print the sorted list.</li>
+<li>Create a dictionary with information about a book (title, author, year) and print each key-value pair.</li>
+<li>Create two sets of numbers and find their union, intersection, and difference.</li>
+</ol>
+
+  </div>
+  
+  
+  
+  <div class="chapter-navigation">
+    
+    
+    
+    <a href="/learning-tracks/programming/chapter2/" class="next-chapter">Next: Chapter 2: Control Flow &rarr;</a>
+    
+  </div>
+  
+</article>
+
+        </div>
+      </main>
+      <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Educational Hub. All rights reserved.</p>
+    </div>
+  </footer>
+    </div>
+  </body>
+</html>

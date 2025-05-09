@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="home-content">
+  <div class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
+    <p class="page-subtitle">{{ .Params.subtitle }}</p>
+    {{ end }}
+  </div>
+  
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+  
+  <div class="featured-tracks">
+    <h2>Featured Learning Tracks</h2>
+    <div class="tracks-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "learning-tracks") }}
+      <div class="track-card">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}" class="track-link">Explore &rarr;</a>
+      </div>
+      {{ end }}
+    </div>
+    <p class="tracks-more">
+      <a href="/learning-tracks/">View all learning tracks &rarr;</a>
+    </p>
+  </div>
+</section>
+{{ end }}
