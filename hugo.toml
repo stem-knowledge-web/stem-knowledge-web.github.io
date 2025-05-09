@@ -1,0 +1,36 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Educational Hub"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
+
+# Enable syntax highlighting
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsStyle = "monokailight"
+
+# Enable math rendering
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # This allows HTML in markdown for KaTeX
+  [markup.highlight]
+    noClasses = false
+
+[params]
+  description = "A minimalist educational website"
+  mainSections = ["learning-tracks"]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Learning Tracks"
+    url = "/learning-tracks/"
+    weight = 3

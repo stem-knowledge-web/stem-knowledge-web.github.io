@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="chapter-content">
+  <div class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
+    <p class="page-subtitle">{{ .Params.subtitle }}</p>
+    {{ end }}
+  </div>
+  
+  <div class="page-content">
+    {{ .Content }}
+  </div>
+  
+  <!-- Navigation for chapters -->
+  {{ if in .RelPermalink "/learning-tracks/" }}
+  <div class="chapter-navigation">
+    {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" class="prev-chapter">&larr; Previous: {{ .Title }}</a>
+    {{ end }}
+    
+    {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" class="next-chapter">Next: {{ .Title }} &rarr;</a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}

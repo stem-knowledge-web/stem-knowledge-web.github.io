@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: Python Basics | Educational Hub</title>
+    <meta name="description" content="A minimalist educational website">
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.60f54fd7a0b5753e5b62b02afad8c3876720278033d8eddc900874ebf7d432fd.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    
+    
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+    <div class="header-container">
+      <div class="site-title">
+        <a href="http://localhost:1313/">Educational Hub</a>
+      </div>
+      <nav class="main-nav">
+    <ul>
+      
+      <li><a href="/" >Home</a></li>
+      
+      <li><a href="/about/" >About Us</a></li>
+      
+      <li><a href="/learning-tracks/" >Learning Tracks</a></li>
+      
+    </ul>
+  </nav>
+    </div>
+  </header>
+      <main>
+        <div class="content-container">
+          
+<article class="chapter-content">
+  <div class="page-header">
+    <h1 class="page-title">Chapter 1: Python Basics</h1>
+    
+    <p class="page-subtitle">Getting started with Python</p>
+    
+  </div>
+  
+  <div class="page-content">
+    <h2 id="introduction-to-python">Introduction to Python</h2>
+<p>Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability with its notable use of significant whitespace.</p>
+<h3 id="why-python">Why Python?</h3>
+<p>Python has become one of the most popular programming languages because it is:</p>
+<ul>
+<li><strong>Easy to learn</strong>: Clean syntax and readability make it accessible to beginners</li>
+<li><strong>Versatile</strong>: Used in web development, data science, AI, scientific computing, and more</li>
+<li><strong>Powerful</strong>: Extensive standard library and third-party packages</li>
+<li><strong>Cross-platform</strong>: Runs on Windows, macOS, Linux, and many other platforms</li>
+</ul>
+<h3 id="setting-up-python">Setting Up Python</h3>
+<p>To get started with Python, you need to install it on your computer:</p>
+<ol>
+<li>Visit <a href="https://www.python.org/">python.org</a></li>
+<li>Download the latest version for your operating system</li>
+<li>Run the installer and follow the instructions</li>
+</ol>
+<h3 id="your-first-python-program">Your First Python Program</h3>
+<p>Let&rsquo;s create the traditional &ldquo;Hello, World!&rdquo; program:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># This is a comment</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>When you run this program, it will output:</p>
+<pre tabindex="0"><code>Hello, World!
+</code></pre><h3 id="python-syntax-basics">Python Syntax Basics</h3>
+<p>Python uses indentation (whitespace) to define code blocks, unlike many other languages that use braces:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Example of indentation</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;This is indented&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;So is this&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;This is not indented&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="variables-and-data-types">Variables and Data Types</h3>
+<p>Python is a dynamically typed language, which means you don&rsquo;t need to declare variable types:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Integer</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Float</span>
+</span></span><span class="line"><span class="cl"><span class="n">temperature</span> <span class="o">=</span> <span class="mf">98.6</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># String</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;Alice&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Boolean</span>
+</span></span><span class="line"><span class="cl"><span class="n">is_student</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># List</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Dictionary</span>
+</span></span><span class="line"><span class="cl"><span class="n">person</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Bob&#34;</span><span class="p">,</span> <span class="s2">&#34;age&#34;</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+</span></span></code></pre></div><h3 id="basic-operations">Basic Operations</h3>
+<p>Python supports standard arithmetic operations:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Addition</span>
+</span></span><span class="line"><span class="cl"><span class="nb">sum</span> <span class="o">=</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">3</span>  <span class="c1"># 8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Subtraction</span>
+</span></span><span class="line"><span class="cl"><span class="n">difference</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">4</span>  <span class="c1"># 6</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Multiplication</span>
+</span></span><span class="line"><span class="cl"><span class="n">product</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">3</span>  <span class="c1"># 12</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Division</span>
+</span></span><span class="line"><span class="cl"><span class="n">quotient</span> <span class="o">=</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">2</span>  <span class="c1"># 4.0 (note: returns a float)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Integer division</span>
+</span></span><span class="line"><span class="cl"><span class="n">integer_division</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">//</span> <span class="mi">2</span>  <span class="c1"># 4 (discards remainder)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Modulus (remainder)</span>
+</span></span><span class="line"><span class="cl"><span class="n">remainder</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">%</span> <span class="mi">2</span>  <span class="c1"># 1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Exponentiation</span>
+</span></span><span class="line"><span class="cl"><span class="n">power</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span>  <span class="c1"># 8</span>
+</span></span></code></pre></div><h2 id="practice-exercises">Practice Exercises</h2>
+<ol>
+<li>Write a program that calculates and prints the area of a rectangle with width 7 and height 5.</li>
+<li>Create variables to store your name, age, and whether you&rsquo;re a student. Print each variable on a new line.</li>
+<li>Write a program that converts temperatures from Fahrenheit to Celsius using the formula: C = (F - 32) * 5/9</li>
+</ol>
+
+  </div>
+  
+  
+  
+  <div class="chapter-navigation">
+    
+    <a href="/learning-tracks/programming/chapter2/" class="prev-chapter">&larr; Previous: Chapter 2: Control Flow</a>
+    
+    
+    
+  </div>
+  
+</article>
+
+        </div>
+      </main>
+      <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Educational Hub. All rights reserved.</p>
+    </div>
+  </footer>
+    </div>
+  </body>
+</html>

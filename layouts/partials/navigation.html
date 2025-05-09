@@ -1,0 +1,7 @@
+<nav class="main-nav">
+    <ul>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Control Flow | Educational Hub</title>
+    <meta name="description" content="A minimalist educational website">
+    <link rel="icon" href="/favicon.ico">
+    
+    
+    
+    <link rel="stylesheet" href="/css/main.min.60f54fd7a0b5753e5b62b02afad8c3876720278033d8eddc900874ebf7d432fd.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    
+    
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false},
+            {left: "\\[", right: "\\]", display: true}
+          ]
+        });
+      });
+    </script>
+    
+  </head>
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+    <div class="header-container">
+      <div class="site-title">
+        <a href="http://localhost:1313/">Educational Hub</a>
+      </div>
+      <nav class="main-nav">
+    <ul>
+      
+      <li><a href="/" >Home</a></li>
+      
+      <li><a href="/about/" >About Us</a></li>
+      
+      <li><a href="/learning-tracks/" >Learning Tracks</a></li>
+      
+    </ul>
+  </nav>
+    </div>
+  </header>
+      <main>
+        <div class="content-container">
+          
+<article class="chapter-content">
+  <div class="page-header">
+    <h1 class="page-title">Chapter 2: Control Flow</h1>
+    
+    <p class="page-subtitle">Making decisions and repetition in code</p>
+    
+  </div>
+  
+  <div class="page-content">
+    <h2 id="control-flow-in-python">Control Flow in Python</h2>
+<p>Control flow refers to the order in which statements are executed in a program. Python provides various control structures that allow you to alter the flow of execution.</p>
+<h3 id="conditional-statements">Conditional Statements</h3>
+<p>Conditional statements allow you to execute code based on whether certain conditions are true or false.</p>
+<h4 id="if-statement">If Statement</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="mi">18</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;You are an adult.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="if-else-statement">If-Else Statement</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">temperature</span> <span class="o">=</span> <span class="mi">15</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;It&#39;s warm outside.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;It&#39;s cool outside.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="if-elif-else-statement">If-Elif-Else Statement</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">score</span> <span class="o">=</span> <span class="mi">85</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grade</span> <span class="o">=</span> <span class="s2">&#34;A&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grade</span> <span class="o">=</span> <span class="s2">&#34;B&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grade</span> <span class="o">=</span> <span class="s2">&#34;C&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">60</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grade</span> <span class="o">=</span> <span class="s2">&#34;D&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">grade</span> <span class="o">=</span> <span class="s2">&#34;F&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Your grade is </span><span class="si">{</span><span class="n">grade</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="loops">Loops</h3>
+<p>Loops are used to repeat a block of code multiple times.</p>
+<h4 id="for-loop">For Loop</h4>
+<p>The <code>for</code> loop is used to iterate over a sequence (like a list, tuple, dictionary, string, or range).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Iterating over a range</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>  <span class="c1"># 0, 1, 2, 3, 4</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Iterating over a list</span>
+</span></span><span class="line"><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;apple&#34;</span><span class="p">,</span> <span class="s2">&#34;banana&#34;</span><span class="p">,</span> <span class="s2">&#34;cherry&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">fruit</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">fruit</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="while-loop">While Loop</h4>
+<p>The <code>while</code> loop executes a block of code as long as a condition is true.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span></code></pre></div><h3 id="break-and-continue">Break and Continue</h3>
+<p>These statements can be used to control the flow of loops:</p>
+<ul>
+<li><code>break</code>: Exits the loop prematurely</li>
+<li><code>continue</code>: Skips the current iteration and moves to the next one</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Using break</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># Prints 0, 1, 2, 3, 4</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Using continue</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>  <span class="c1"># Prints 0, 1, 3, 4</span>
+</span></span></code></pre></div><h3 id="combining-conditions">Combining Conditions</h3>
+<p>You can combine conditions using logical operators:</p>
+<ul>
+<li><code>and</code>: True if both conditions are true</li>
+<li><code>or</code>: True if at least one condition is true</li>
+<li><code>not</code>: Inverts the condition</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</span></span><span class="line"><span class="cl"><span class="n">has_license</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="ow">and</span> <span class="n">has_license</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;You can drive.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temperature</span> <span class="o">=</span> <span class="mi">30</span>
+</span></span><span class="line"><span class="cl"><span class="n">is_raining</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">25</span> <span class="ow">or</span> <span class="n">is_raining</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Weather is notable.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">is_weekend</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="ow">not</span> <span class="n">is_weekend</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;It&#39;s a weekday.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="solutions-to-chapter-1-practice-exercises">Solutions to Chapter 1 Practice Exercises</h2>
+<ol>
+<li>Area of rectangle:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">width</span> <span class="o">=</span> <span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="n">height</span> <span class="o">=</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl"><span class="n">area</span> <span class="o">=</span> <span class="n">width</span> <span class="o">*</span> <span class="n">height</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;The area of the rectangle is </span><span class="si">{</span><span class="n">area</span><span class="si">}</span><span class="s2"> square units.&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="2">
+<li>Variables for personal information:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;Alice&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</span></span><span class="line"><span class="cl"><span class="n">is_student</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">is_student</span><span class="p">)</span>
+</span></span></code></pre></div><ol start="3">
+<li>Fahrenheit to Celsius converter:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fahrenheit</span> <span class="o">=</span> <span class="mf">98.6</span>
+</span></span><span class="line"><span class="cl"><span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahrenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">fahrenheit</span><span class="si">}</span><span class="s2">°F is equal to </span><span class="si">{</span><span class="n">celsius</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">°C&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="practice-exercises">Practice Exercises</h2>
+<ol>
+<li>Write a program that checks if a number is positive, negative, or zero.</li>
+<li>Create a program that prints all even numbers between 1 and 20 using a loop.</li>
+<li>Write a program that asks the user for a password and keeps asking until they enter &ldquo;python123&rdquo;.</li>
+</ol>
+
+  </div>
+  
+  
+  
+  <div class="chapter-navigation">
+    
+    <a href="/learning-tracks/programming/chapter3/" class="prev-chapter">&larr; Previous: Chapter 3: Data Structures</a>
+    
+    
+    
+    <a href="/learning-tracks/programming/chapter1/" class="next-chapter">Next: Chapter 1: Python Basics &rarr;</a>
+    
+  </div>
+  
+</article>
+
+        </div>
+      </main>
+      <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2025 Educational Hub. All rights reserved.</p>
+    </div>
+  </footer>
+    </div>
+  </body>
+</html>
