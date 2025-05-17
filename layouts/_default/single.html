@@ -11,15 +11,21 @@
     {{ .Content }}
   </div>
   
-  <!-- Navigation for chapters -->
+  <!-- Navigation for chapters using custom frontmatter parameters -->
   {{ if in .RelPermalink "/learning-tracks/" }}
   <div class="chapter-navigation">
-    {{ with .PrevInSection }}
-    <a href="{{ .RelPermalink }}" class="prev-chapter">&larr; Previous: {{ .Title }}</a>
+    <!-- Previous chapter link based on frontmatter -->
+    {{ if .Params.prev }}
+      {{ with .Site.GetPage .Params.prev }}
+        <a href="{{ .RelPermalink }}" class="prev-chapter">&larr; Previous: {{ .Title }}</a>
+      {{ end }}
     {{ end }}
     
-    {{ with .NextInSection }}
-    <a href="{{ .RelPermalink }}" class="next-chapter">Next: {{ .Title }} &rarr;</a>
+    <!-- Next chapter link based on frontmatter -->
+    {{ if .Params.next }}
+      {{ with .Site.GetPage .Params.next }}
+        <a href="{{ .RelPermalink }}" class="next-chapter">Next: {{ .Title }} &rarr;</a>
+      {{ end }}
     {{ end }}
   </div>
   {{ end }}

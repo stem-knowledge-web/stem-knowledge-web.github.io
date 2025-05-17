@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/learning-tracks/mathematics/chapter1/</loc>
+    <loc>http://localhost:1313/learning-tracks/quantum-computation-information/chapter1/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/programming/chapter1/</loc>
+    <loc>http://localhost:1313/learning-tracks/linear-algebra/chapter1/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/programming/chapter2/</loc>
+    <loc>http://localhost:1313/learning-tracks/quantum-computation-information/chapter2/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/mathematics/chapter2/</loc>
+    <loc>http://localhost:1313/learning-tracks/linear-algebra/chapter2/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/programming/chapter3/</loc>
+    <loc>http://localhost:1313/learning-tracks/quantum-computation-information/chapter3/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/mathematics/chapter3/</loc>
+    <loc>http://localhost:1313/learning-tracks/linear-algebra/chapter3/</loc>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/learning-tracks/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/mathematics/</loc>
+    <loc>http://localhost:1313/learning-tracks/linear-algebra/</loc>
   </url><url>
-    <loc>http://localhost:1313/learning-tracks/programming/</loc>
+    <loc>http://localhost:1313/learning-tracks/quantum-computation-information/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url>

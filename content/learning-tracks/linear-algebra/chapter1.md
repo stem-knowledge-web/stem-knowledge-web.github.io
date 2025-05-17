@@ -1,7 +1,8 @@
 ---
-title: "Chapter 1: Algebraic Expressions"
-subtitle: "Understanding the language of mathematics"
+title: "Chapter 1: Vectors & Matrices"
+subtitle: "Understanding the alphabet of Linear Algebra"
 weight: 1
+next: "/learning-tracks/linear-algebra/chapter2"
 ---
 
 ## Introduction to Algebra

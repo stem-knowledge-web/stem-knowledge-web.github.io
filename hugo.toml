@@ -1,6 +1,6 @@
-baseURL = "https://example.com/"
+baseURL = "https://stemknowledgeweb.github.io/"
 languageCode = "en-us"
-title = "Educational Hub"
+title = "STEM Knowledge"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
 

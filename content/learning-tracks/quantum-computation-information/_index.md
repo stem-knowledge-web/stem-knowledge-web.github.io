@@ -1,6 +1,7 @@
 ---
-title: "Python Programming"
-subtitle: "Learning to code with Python"
+title: "Quantum Computation & Information"
+subtitle: "What if my bits were not only 0s and 1s?"
+next: "/learning-tracks/quantum-computation-information/chapter1"
 ---
 
 ## About This Track

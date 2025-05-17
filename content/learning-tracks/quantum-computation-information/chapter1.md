@@ -2,6 +2,8 @@
 title: "Chapter 1: Python Basics"
 subtitle: "Getting started with Python"
 weight: 1
+prev : "/learning-tracks/quantum-computation-information/"
+next : "/learning-tracks/quantum-computation-information/chapter2"
 ---
 
 ## Introduction to Python

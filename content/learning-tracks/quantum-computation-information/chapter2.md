@@ -2,6 +2,8 @@
 title: "Chapter 2: Control Flow"
 subtitle: "Making decisions and repetition in code"
 weight: 2
+prev : "/learning-tracks/quantum-computation-information/chapter2"
+next : "/learning-tracks/quantum-computation-information/chapter3"
 ---
 
 ## Control Flow in Python
